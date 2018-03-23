@@ -1,0 +1,53 @@
+/*
+	https://kafi-rashid.github.io/
+	Owner: kafi.rashid@gmail.com
+*/
+
+* {
+	box-sizing: border-box;
+	vertical-align: top;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+body {
+	background-color: #222222;
+}
+#sky {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.star {
+	height: 2px;
+	width: 2px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #a1a1ad;
+	transition: 0.3s;
+	opacity: 0;
+}
+.social {
+	position: absolute;
+	bottom: 30px;
+	right: 35px;
+	z-index: 3;
+	line-height: 0;
+}
+.social a {
+	text-decoration: none;
+}
+.social img {
+	width: 18px;
+	margin-left: 5px;
+	filter: invert(40%);
+	transition: 0.3s;
+}
+.social a:hover > img {
+	filter: invert(100%);
+}
